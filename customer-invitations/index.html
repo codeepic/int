@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Customer Invitations</title>
+
+	<style>
+		body { font-family: Arial, sans-serif; }
+		div { margin: 100px; }
+		ul{ list-style-type: none; }
+		li { margin: 10px auto; }
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Customers living closer than 100km from Intercom Dublin office</h1>
+		<ul id="customers">
+			
+		</ul>
+	</div>
+
+	<script src="customers.json"></script>
+	<script src="customer-invitations.js"></script>
+	<script>
+		//customerInvitations.createCustomerList(customersData);
+
+		var customerInvitations = new CustomerInvitations(customersData);
+		customerInvitations.createCustomerList();
+	</script>
+</body>
+</html>
