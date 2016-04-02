@@ -77,11 +77,9 @@ CustomerInvitations.prototype.displayCustomer = function(customer){
 	}
 
 	var liEl = document.createElement('li'),
-			liContent = customer.user_id + '. ' + customer.name
+		liContent = customer.user_id + '. ' + customer.name;
 	
 	liEl.innerHTML = liContent;
 
 	this.customersListEl.appendChild(liEl);
 };
-
-console.log('cleanup');
